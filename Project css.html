@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .section1{
+            background-image: url("rainbow-header-bg.jpg");
+            height:150vh;
+            width:100vw;
+            background-size: cover;
+        }
+        .header p{
+            text-align: center;
+            letter-spacing: 3px;
+            padding-top:10%;
+            font-size: 3em;
+            font-weight: 500;
+        }
+       .header .p1{
+            text-align: center;
+            letter-spacing: 3px;
+            padding-top: 25px;
+            font-size: 1.7em;
+            font-weight: 400;
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+            padding-top:70px;
+            gap:55px;
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 1.7em;
+            font-weight: 400;
+        }
+        .content1{
+          display: flex;
+          justify-content: center;
+          margin-top: 263px;
+          /* border: 2px solid red; */
+          height: 27vh;
+          /* gap:70px; */
+          margin-right: 3.2%;
+        }
+        .imgs{
+            height: 95%;
+            width: 24%;
+            /* border: 2px solid; */
+            padding: 3% 1%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .imgs .image2{
+            height:100%;
+            width: 30%;
+            margin-left: 10%;
+        }
+        .content1 .pty{
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        
+        .para1{
+            /* border: 2px solid; */
+            width: 26%;
+            height: 100%;
+            text-align: justify;
+            padding: 1%;
+            line-height: 160%;
+            margin-left: 4%;
+            font-size: 1.2em;
+        }
+        
+        .para2{
+            text-align: justify;
+            margin-right: 28%;
+            line-height: 160%;
+            font-size: 1.2em;
+        }
+        .content2{
+            margin-top: 90px;
+            margin-left: 3%;
+            /* border: 2px solid; */
+            display: flex;
+            justify-content: center;
+        }
+        .content2 .pty1{
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        .section2{
+            background-image: url("rainbow-content-bg.jpg");
+            background-repeat: 8;
+            height:auto;
+            width:100vw;
+            padding-bottom: 10%;
+        }
+        
+        .content3{
+          text-align: center;
+          padding-top: 7%;
+        }
+
+        .content3 p{
+            font-size: 1.2em;
+            line-height: 160%;
+        }
+        .content3 h1{
+            font-size: 2.0em;
+            font-weight: 500;
+        }
+
+        .maincontainer{
+            display: flex;
+            /* flex-direction: column; */
+            height:auto;
+            width:70vw;
+            margin:auto;
+            margin-top: 5%;
+            justify-content: space-around;
+            /* column-gap: 20px; */
+            
+        }
+        .main1{
+            height:100%;
+            width:31%;
+        }
+        .main2{
+            height:100%;
+            width:31%;
+        }
+        .main3{
+            height: 100%;
+            width:31%;
+        }
+        
+        .flex1item1{
+            height:17%;
+            width:100%;  
+            padding: 30px;
+            background-color:rgb(159, 224, 182);
+            font-size: 1.7em;
+            font-weight: 100;
+            color:green;
+         }
+        .flex1item2{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            font-size: 1.2em;
+            background-color: rgb(191, 233, 209);
+            color:rgb(8, 188, 71);
+           
+        }
+        
+        .flex1item3{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            font-size: 1.2em;
+            background-color: rgb(219, 241, 228);
+            color:rgb(8, 188, 71);
+         }
+        .flex1item4{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            background-color: rgb(164, 224, 190);
+            color:rgb(8, 188, 71);
+            font-size: 1.2em;
+         }
+         .flex1item5{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            background-color: rgb(191, 233, 209);
+            color:rgb(8, 188, 71);
+            font-size: 1.2em;
+         }
+         .flex1item6{
+            height:16%;
+            width:100%; 
+            padding: 13px;
+            text-align: center;
+            background-color: rgb(219, 241, 228);
+            
+         }
+         .flex1item6 button{
+            border:none;
+         }
+
+         .flex2item1{
+            height:17%;
+            width:100%; 
+            padding: 30px;
+            font-size: 1.7em;
+            font-weight: 100;
+            background-color:rgb(171, 221, 248);
+            color:rgb(10, 137, 192);
+         }
+         .flex2item2{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            background-color:rgb(183, 236, 250);
+            color:rgb(10, 137, 192);
+            font-size: 1.2em;
+
+         }
+         .flex2item3{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            background-color:rgb(219, 250, 253);
+            color:rgb(10, 137, 192);
+            font-size: 1.2em;
+         }
+         .flex2item4{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            background-color:rgb(171, 221, 248);
+            color:rgb(10, 137, 192);
+            font-size: 1.2em;
+         }
+         .flex2item5{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            background-color:rgb(183, 236, 250);
+            color:rgb(10, 137, 192);
+            font-size: 1.2em;
+
+         }
+         .flex2item6{
+            height:16%;
+            width:100%; 
+            padding: 13px;
+            text-align: center;
+            background-color:rgb(219, 250, 253);
+            
+         }
+         .flex2item6 button{
+            border: none;
+         }
+
+         .flex3item1{
+            height:17%;
+            width:100%; 
+            padding: 30px;
+            font-size: 1.7em;
+            font-weight: 100;
+            background-color:rgb(221, 219, 160);
+            color:rgb(161, 86, 86);
+         }
+         .flex3item2{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            background-color: rgb(236, 233, 200);
+            color:rgb(183, 109, 109);
+            font-size: 1.2em;
+         }
+         .flex3item3{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            font-size: 1.2em;
+            background-color:rgb(243, 242, 224);
+            color:rgb(183, 109, 109);
+         }
+         .flex3item4{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            font-size: 1.2em;
+            background-color:rgb(221, 219, 160);
+            color:rgb(183, 109, 109);
+         }
+         .flex3item5{
+            height:16%;
+            width:100%; 
+            padding: 30px;
+            font-size: 1.2em;
+            background-color: rgb(236, 233, 200);
+            color:rgb(183, 109, 109)
+         }
+         .flex3item6{
+            height:16%;
+            width:100%; 
+            text-align: center;
+            padding: 13px;
+            background-color:rgb(243, 242, 224)
+            
+         }
+         .flex3item6 button{
+            border: none;
+         }
+
+         .section3{
+            background-image: url("rainbow-content-bg.jpg");
+            background-repeat: no-repeat;
+            height:27vh;
+            width:100vw;
+            text-align: center;
+            
+         }
+
+         .section3 p{
+            font-size: 1.3em;
+            line-height: 160%;
+            padding-top: 1.9%;
+         }
+
+         .section3 h1{
+            font-size: 2.0em;
+            font-weight: 500;
+         }
+
+         .section4{
+            background-image: url("rainbow-header-bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:106vh;
+            width:100vw;
+            
+         } 
+
+         .sec4child{
+            width: 47.5%;
+            height:55vh;
+            margin: 0px auto;
+         }
+
+         .sec4child2{
+            display: flex;
+            gap:20px;
+         }
+         
+         
+         .name input{
+            background-color:rgb(228,214,172);
+            height:6.6vh;
+            width:23vw;
+            padding:10px;
+            font-size: 1.2em;
+            border:1px solid rgb(124, 109, 95);
+         }
+         .email input{
+            background-color: rgb(228,214,172);
+            height:6.6vh;
+            width:23vw;
+            padding:10px;
+            font-size: 1.2em;
+            border:1px solid rgb(124, 109, 95);
+         }
+         .subject input{
+            height:6.6vh;
+            width:47.35vw;
+            padding:10px;
+            font-size: 1.2em;
+            border: 1px solid rgb(124, 109, 95);
+            background-color: rgb(228,214,172);
+         }
+         .message textarea{
+            width: 100%;
+            padding:2%;
+            font-size: 1.6em;
+            border: 1px solid rgb(124, 109, 95);
+            background-color: rgb(228,214,172);
+         }
+         .sec4child3main{
+            display: flex;
+            justify-content: flex-end;
+            
+         }
+         .sec4child3 input{
+            height:6vh;
+            width:8vw;
+            margin-top: 15%;
+            background-color: rgb(228,214,172);
+            border: 1px solid rgb(124, 109, 95);
+            font-size: 1.1em;
+            color:rgb(124, 109, 95);
+         }
+        
+         .sec4child  ::placeholder{
+            color:rgb(124, 109, 95);
+        
+         }
+          .icons{
+            display: flex;
+            justify-content: center;
+            height:5vh;
+            margin-top: 14.5%;
+            gap:2%;
+          }
+         
+          .icons .googleplus{
+            height:100%;
+            width:2.5%;
+            border-radius: 50%;
+            border:1px solid rgb(124, 109, 95);
+            padding:6px;
+          }
+          .icons .facebook{
+            height:100%;
+            width:2.5%;
+            border-radius: 50%;
+            border:1px solid rgb(124, 109, 95);
+            padding:12px;
+          }
+          .icons .twitter{
+            height:100%;
+            width:2.5%;
+            border-radius: 50%;
+            border:1px solid rgb(124, 109, 95);
+            padding:8px;
+          }
+          .icons .behance{
+            height:100%;
+            width:2.5%;
+            border-radius: 50%;
+            border:1px solid rgb(124, 109, 95);
+            padding:9px;
+          }
+          .icons .linkedin{
+            height:100%;
+            width:2.5%;
+            border-radius: 50%;
+            border:1px solid rgb(124, 109, 95);
+            padding:10px;
+          }
+          .footer{
+            text-align: center;
+            margin-top: 3.5%;
+            font-size: 1.2em;
+          }
+
+          @media screen and (width<576px){
+         .message textarea{
+                width:30vw;
+            }
+            .maincontainer{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .main1,.main2,.main3{
+                width: 100%;
+                margin-bottom: 7%;
+            }
+            .flex1item1,.flex2item1,.flex3item1{
+                width: 100%;
+                height: 17%;
+            }
+            .flex1item2,.flex1item3,.flex1item4,.flex1item5,.flex1item6,.flex2item2,.flex2item3,.flex2item4,.flex2item5,.flex2item6,.flex3item2,.flex3item3,.flex3item4,.flex3item5,.flex3item6{
+                width: 100%;
+                height: 16%;
+            }
+            .section1{
+                background-size: 100% 100%;
+                height: 100vh;
+            }
+            .header p{
+                font-size: 2em;
+            }
+            .header  .p1{
+                font-size: 1.3em;
+            }
+            .navbar{
+                display: none;
+            }
+            .content1{
+                margin-top: 230px;
+            }
+            .imgs{
+                height:65%;
+                width:20%;
+                
+            }
+            .imgs .image2{
+                height:50%;
+                width: 30%; 
+                margin-left: none;
+            }
+            .content1 .pty{
+                font-size: 1.4em;
+                
+            }
+            .content1{
+                height:24vh ;
+            }
+            .para1{
+                font-size: 0.6em;
+                line-height: 120%;
+
+            }
+            .content2{
+                margin-top: 15px;
+                /* margin-left: 0%; */
+            }
+            .content2 .pty1{
+                font-size: 1.4em;
+            }
+            .para2{
+                font-size: 0.6em;
+                line-height: 120%;
+            }
+            
+
+        }
+
+       
+        
+          
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="header">
+        <p style="color:whitesmoke" ><cite>Rainbow</cite></p>
+        <p class="p1" style="color:rgb(116, 105, 95)" >free bootstrap 4.0 theme</p>
+        </div>
+
+
+        <div class="navbar">
+           <a href="" style="color:rgb(116, 105, 95)">Home</a>
+           <a href="" style="color:rgb(80, 139, 160) ">About</a>
+           <a href="" style="color:rgb(80, 139, 160)">Packages</a>
+           <a href="" style="color:rgb(80, 139, 160)">Elements</a>
+           <a href="" style="color:rgb(80, 139, 160)">Contact</a>
+        </div>
+
+       
+        <div class="content1">
+            <div class="imgs">
+                <img src="map2icon.png" alt="" class="image2">
+                <img src="rocketimage.png" alt="" class="image2" >         
+            </div>
+            <p class="para1" style="color:rgb(124, 109, 95)"><span class="pty" style="color: rgb(107, 95, 84);">Lorem ipsum dollar</span><br>Donec mattis ipsum in erat viverra commodo. <br> Proin sapien lacus, euismod eget nisl in, <br> elementum posuere massa. Curabitur a odio <br> eros. Cras aliquam lectus erat, non semper est <br>volutpat eget. Ut eget erat tincidunt</p>
+        </div>
+        
+        <div class="content2">
+            <p class="para2" style="color:rgb(124, 109, 95) "><span class="pty1" style="color: rgb(107, 95, 84);">Lorem ipsum dollar</span><br>Donec mattis ipsum in erat viverra commodo. <br> Proin sapien lacus, euismod eget nisl in, <br> elementum posuere massa. Curabitur a odio <br> eros. Cras aliquam lectus erat, non semper est <br>volutpat eget. Ut eget erat tincidunt</p>
+        </div>
+    </div>
+
+    <div class="section2">
+       <div class="content3">
+        <h1 style="color: rgb(107, 95, 84)">Select your plan</h1><br>
+        <p style="color:rgb(124, 109, 95)">Phasellus in magna elementum,tincidunt metus dictum,condimentum eros. <br> Aenean nte erat, blandit quis mi sed, convallis luctus purus. Doneac accumsan <br> nulla sed odio. </p>
+       </div>
+
+       <div class="maincontainer">
+            <div class="main1">
+            <div class="flex1item1">Basic Pack</div>
+            <div class="flex1item2">10 email addresses</div>
+            <div class="flex1item3">100 GB space</div>
+            <div class="flex1item4">1,000 GB bandwidth</div>
+            <div class="flex1item5">USD $ 10 per month</div>
+            <div class="flex1item6"> <button style="padding:13px 50px ;border-radius: 50px;background-color: rgb(164, 224, 190);color:rgb(8, 188, 71);font-size: 1.3em;">Buy</button> </div>
+            </div>
+            <div class="main2">
+            <div class="flex2item1">Professional Pack</div>
+            <div class="flex2item2">20 email addresses</div>
+            <div class="flex2item3">200 GB space</div>
+            <div class="flex2item4">2,000 GB bandwidth</div>
+            <div class="flex2item5">USD $15 per month</div>
+            <div class="flex2item6"> <button style="padding:13px 50px ;border-radius: 50px;background-color:rgb(171, 221, 248);color:rgb(10, 137, 192);font-size: 1.3em;">Buy</button> </div>
+            </div>
+            <div class="main3">
+            <div class="flex3item1">Gold Pack</div>
+            <div class="flex3item2">30 email addresses</div>
+            <div class="flex3item3">300 GB space</div>
+            <div class="flex3item4">3,000 GB bandwidth</div>
+            <div class="flex3item5">USD $20 per month</div>
+            <div class="flex3item6"> <button style="padding:13px 50px ;border-radius: 50px; background-color: rgb(221, 219, 160); color:rgb(183, 109, 109);font-size: 1.3em;">Buy</button> </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="section3">
+        <h1 style="color: rgb(107, 95, 84)">contact us</h1>
+        <p style="color:rgb(124, 109, 95)">Phasellus in magna elementum,tincidunt metus dictum,condimentum <br> eros.Aenean nte erat, blandit quis mi sed, convallis luctus purus. Doneac <br> accumsan nulla sed odio. </p>
+    </div>
+
+    <div class="section4">
+        <form action="">
+
+            <div class="sec4child">
+                <div class="sec4child2">
+                    <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="email">
+                    <label for="email"></label>
+                    <input type="text" placeholder="Email" id="email">
+                    </div>
+                </div><br>
+                <div class="subject">
+                    <label for="sub"></label>
+                    <input type="text" placeholder="Subject" id="sub">
+                </div><br>
+                <div class="message">
+                    <label for="mess"></label>
+                    <textarea name="" cols="29" rows="7" placeholder="Message" id=""></textarea>
+                </div>
+                
+                <div class="sec4child3main">
+                    <div class="sec4child3">
+                        <input type="submit">
+                    </div>
+                </div>
+        
+            </div>
+        </form>
+
+        <div class="icons">
+         <div class="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#6b5f54" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></div>
+         <div class="googleplus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#6b5f54" d="M386.1 228.5c1.8 9.7 3.1 19.4 3.1 32C389.2 370.2 315.6 448 204.8 448c-106.1 0-192-85.9-192-192s85.9-192 192-192c51.9 0 95.1 18.9 128.6 50.3l-52.1 50c-14.1-13.6-39-29.6-76.5-29.6-65.5 0-118.9 54.2-118.9 121.3 0 67.1 53.4 121.3 118.9 121.3 76 0 104.5-54.7 109-82.8H204.8v-66h181.3zm185.4 6.4V179.2h-56v55.7h-55.7v56h55.7v55.7h56v-55.7H627.2v-56h-55.7z"/></svg></div>
+         <div class="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#6b5f54" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></div>
+         <div class="behance"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#6b5f54" d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2 .6-8.7 .6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"/></svg></div>
+         <div class="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#6b5f54" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg></div>
+        </div>
+
+        <div class="footer">
+            <p style="color:rgb(124, 109, 95)">Copyright &copy; 2016 your company | Design: <span style="color:rgb(80, 139, 160)">Templatemo</span></p>
+        </div>
+    </div>
+</body>
+</html>
